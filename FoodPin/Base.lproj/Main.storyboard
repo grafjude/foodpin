@@ -67,10 +67,10 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="locationLabel" destination="cud-Sk-1uu" id="6MG-32-37e"/>
-                                    <outlet property="nameLabel" destination="ZG1-kv-Jsk" id="fPC-Wb-69T"/>
+                                    <outlet property="nameLabel" destination="ZG1-kv-Jsk" id="cPP-2R-4RV"/>
                                     <outlet property="thumbnailImageView" destination="zFu-7p-7zO" id="xk3-gP-1Uk"/>
                                     <outlet property="typeLabel" destination="EGP-Ve-JvN" id="hBS-7a-CHp"/>
-                                    <segue destination="Inm-gE-aab" kind="show" identifier="showRestaurantDetail" id="TmI-zj-6c5"/>
+                                    <segue destination="Inm-gE-aab" kind="show" identifier="showRestaurantDetail" id="h6E-By-3xN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -98,22 +98,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YsJ-5g-3xp"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7e-He-PYG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wgU-bt-Z7U" firstAttribute="top" secondItem="P7e-He-PYG" secondAttribute="bottom" constant="230" id="3zm-tW-39I"/>
                             <constraint firstItem="YsJ-5g-3xp" firstAttribute="top" secondItem="Ubz-CZ-OX2" secondAttribute="bottom" id="4Um-VX-wqt"/>
                             <constraint firstItem="YsJ-5g-3xp" firstAttribute="leading" secondItem="Zw2-Vt-j8T" secondAttribute="leadingMargin" id="IcD-3c-pyu"/>
+                            <constraint firstItem="P7e-He-PYG" firstAttribute="leading" secondItem="Zw2-Vt-j8T" secondAttribute="leadingMargin" constant="121" id="JGz-6p-wcd"/>
+                            <constraint firstItem="P7e-He-PYG" firstAttribute="top" secondItem="Ubz-CZ-OX2" secondAttribute="bottom" constant="229" id="XVy-Iy-x8i"/>
                             <constraint firstItem="YsJ-5g-3xp" firstAttribute="trailing" secondItem="Zw2-Vt-j8T" secondAttribute="trailingMargin" id="Y6U-1Z-JlB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P7e-He-PYG" secondAttribute="trailing" constant="122" id="Z7c-ia-KdX"/>
                             <constraint firstItem="wgU-bt-Z7U" firstAttribute="top" secondItem="YsJ-5g-3xp" secondAttribute="bottom" id="zff-LU-RUn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="restaurantImageView" destination="YsJ-5g-3xp" id="Md1-TN-crT"/>
+                        <outlet property="restaurantLabel" destination="P7e-He-PYG" id="YWA-jg-nnt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZN-L7-jQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911" y="-232"/>
+            <point key="canvasLocation" x="1909.5" y="-233.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n5E-rL-tOB">

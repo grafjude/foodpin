@@ -9,7 +9,15 @@
 import UIKit
 
 class RestaurantTableViewController: UITableViewController {
+    
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var typeLabel: UILabel!
+    @IBOutlet var thumbnailImageView: UIImageView!
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -80,7 +88,6 @@ class RestaurantTableViewController: UITableViewController {
         
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RestaurantTableViewCell
-        
         cell.nameLabel.text = restaurantNames[indexPath.row]
         cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
         cell.locationLabel.text = restaurantLocations[indexPath.row]
